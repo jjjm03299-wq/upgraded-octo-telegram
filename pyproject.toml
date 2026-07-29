@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vpn-netlify-cli"
+version = "1.0.0"
+description = "CLI client for Netlify VPN Serverless API"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.25.0"
+]
+
+[project.scripts]
+vpn-cli = "vpn_cli.cli:main"
